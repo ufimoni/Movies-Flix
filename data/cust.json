@@ -1,0 +1,170 @@
+[
+    {
+        "name" : "Avatar 3",
+         "title": "Avatar-Series",
+         "description": " Avatar is a representation of benders the new elements of earth, toby mark, jessica nicholas lucas must master the 5 elements air,water,earth,vine,fire these elements must masterd in other to mainatin in the world ",
+         "duration" : 153,
+         "ratings" : 2.4,
+         "totalRating" : 423,
+         "releaseYear" :2021,
+         "releaseDate" : "2021-04-10T00:10:01Z",
+         "genres" : [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+         ],
+         "directors" : [ "Micheak Dante Dimartino."],
+         "coverImages" : "Avatar.jpeg",
+         "actors"  : [
+            "Ayan Grediane",
+            "marie o Emmanuel",
+            "KISOLVKI FRED HOLMES"
+         ],
+         "price" : 31
+    },
+    {
+       "name" : "Dinosaurs Attack and extinction",
+       "title": "Dinomovies",
+        "description": "Dinosaur has return back to the earth after 5000000years before man, the garden of eden is the only place safe for mankind again. this is survival of man back to GOD",
+        "duration" : 323,
+        "ratings" : 3.4,
+        "totalRating" : 223,
+        "releaseYear" :2022,
+        "releaseDate" : "2023-06-10T00:00:01Z",
+        "genres" : [
+           "Action",
+           "Adventure",
+           "Sci-Fi",
+           "Horror"
+        ],
+        "directors" : [ "Steven george."],
+        "coverImages" : "Tommy space.jpeg",
+        "actors"  : [
+           "Micheal Beaton",
+           "Judith Emmanuel",
+           "Dwayne Jacobson"
+        ],
+        "price" : 34
+    },
+    {
+       "name" : "Karen",
+       "title": "Inception",
+        "description": "Karen the hunter is a x-military mutants whose powers are that of a lion, karen was bitten by a lion whose power was supernatural and now he controls the power of the jungle",
+        "duration" : 413,
+        "ratings" : 3.4,
+        "totalRating" : 223,
+        "releaseYear" :2017,
+        "releaseDate" : "2018-05-10T00:10:01Z",
+        "genres" : [
+           "Action",
+           "Adventure",
+           "Sci-Fi"
+          
+        ],
+        "directors" : [ "Rachel Titus."],
+        "coverImages" : "Karen.jpeg",
+        "actors"  : [
+           "Micheal Beaton",
+           "Judith Emmanuel",
+           "Dwayne Jacobson"
+        ],
+        "price" : 25
+    },
+    {
+       "name" : "Savitar",
+       "title": "Action-American scifi movie: Savitar",
+        "description": "savitar the return the lost speedster who was banished from time to eternity his return marks a new era of speedsters",
+        "duration" : 432,
+        "ratings" : 3.4,
+        "totalRating" : 203,
+        "releaseYear" :2013,
+        "releaseDate" : "2013-11-04T00:00:01Z",
+        "genres" : [
+           "Action",
+           "Adventure",
+           "Sci-Fi",
+           "Horror"
+        ],
+        "directors" : [ "Alan WoodyJr."],
+        "coverImages" : "Tommy space.jpeg",
+        "actors"  : [
+           "Micheal Beaton",
+           "Judith Emmanuel",
+           "Dwayne Jacobson"
+        ],
+        "price" : 45
+    },
+    {
+       "name" : "Venom",
+       "title": "Venom from marvel",
+        "description": "Toomy is a forensctic scienctist who dsicovered time travel abilities in 2024, having looking for a way to save his girl freind he travle to 2004 in other to save which causes a paradox in time how does he saves the world nwo",
+        "duration" : 123,
+        "ratings" : 3.4,
+        "totalRating" : 223,
+        "releaseYear" :2023,
+        "releaseDate" : "2023-06-10T00:00:01Z",
+        "genres" : [
+           "Action",
+           "Adventure",
+           "Sci-Fi",
+           "Horror"
+        ],
+        "directors" : [ "greg haetil."],
+        "coverImages" : "Venom space.jpeg",
+        "actors"  : [
+           "raplh davis",
+           "Hilga torec",
+           "philip james"
+        ],
+        "price" : 45
+    },{
+       "name" : "legend of hercules",
+       "title": "Hercules",
+        "description": "hercules the god of strength, hercules was born to save the village from opperession and give his people liberty.",
+        "duration" : 99,
+        "ratings" : 5.4,
+        "totalRating" : 113,
+        "releaseYear" :2010,
+        "releaseDate" : "2015-02-10T00:00:01Z",
+        "genres" : [
+           "Action",
+           "Adventure",
+           "Sci-Fi",
+           "Horror"
+        ],
+        "directors" : [ "Alan WoodyJr."],
+        "coverImages" : "the return.jpeg",
+        "actors"  : [
+           "killian samuel",
+           "alex florish",
+           "harry billy cvol",
+           "Naomi james"
+        ],
+        "price" : 65
+    },
+    {
+       "name" : "  Shazam 4",
+        "title": "Shazam vs Black Adam",
+        "duration": 145,
+        "description" : "The story follows Billy Batson, a teenager who is chosen by the ancient wizard Shazam to be his new champion. By saying the name shazam Billy can transform into an adult superhero with various superpowers. in other to defeat black adam and the dark forces. shazam must do everything to keep the world safe",
+        "ratings" :2.9,
+        "totalRating" : 331,
+        "releaseYear" :2023,
+        "releaseDate" : "2023-09-21T00:10:01Z",
+        "genres" : [
+           "Action",
+           "Adventure",
+           "Sci-Fi"
+        ],
+        "directors" : [ "David F. Sanberg","simbirdy florence","Romanio Silverbird"],
+        "coverImages" : "Shazam4.jpeg",
+        "actors"  : [
+           "Zach Levy",
+           "Asher Angel",
+           "Jack Grazer",
+           "Dwayne Jacobson",
+           "Meagan good"
+        ],
+        "price" : 80
+    }
+    ]
