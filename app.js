@@ -5,15 +5,27 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+const ratelimit = require('express-rate-limit');
+const helmet = require('helmet');
+const sanitize = require('express-mongo-sanitize');
+const xss = require('xss-clean');
+
 const movRoute = require('./Route/moviesRoute');
 const authRoute = require('./Route/authRoute');
 const CustomError = require('./utils/CustomError');
-const globalErrorHandler = require('./controllers/errorcontroller')
+const globalErrorHandler = require('./controllers/errorcontroller');
+const userRoute = require('./Route/userRoute');
+
 
 
  // defining the app to the express.
 let app = express(); 
 //// Creating a router.  
+//// Calling the helmet()
+app.use(helmet());
+app.use(sanitize()); // this will remove all mongodb strings that will want to be injected.
+
+app.use(xss());
 
 // Creating a middleware 
 const logger = function(req, res, next){
@@ -21,8 +33,17 @@ const logger = function(req, res, next){
     next();
 }
 app.use(cors());
+let limiter = ratelimit({
+  max: 3,
+  WindowMs: 60 * 60 * 1000, // here we are converting it to 1 hour. which is 60 mins in milliseconds
+  message: 'Sorry we have recieved so many request from this IP address into our server, Please wait for 1 hour',
+});
+
+app.use('/api',limiter);
+
 ///// we use the count: variable,length and also use a middleware = app.use()
-app.use(express.json());
+//// setting the limit of data coming from the api request body.
+app.use(express.json({limit: '10kb'}));
 app.use (logger)
 if(process.env.NODE_ENV==='development'){
     app.use(morgan('dev'))
@@ -36,7 +57,8 @@ app.use((req, res, next) =>{
 
     // uisng the routes
   app.use('/api/v1/movies',movRoute)
-  app.use('/api/v1/users',authRoute) 
+  app.use('/api/v1/auth',authRoute) 
+  app.use('/api/v1/users',userRoute)
 
   // the default route always come last.
   app.all('*', (req,res,next)=>{

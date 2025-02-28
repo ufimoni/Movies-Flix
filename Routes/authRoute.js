@@ -1,7 +1,7 @@
 /// This file is for all authentications for users admin and all stakeholders in our application
 
 const express = require('express');
-const aunthController = require('./../controllers/authController') /// check the require incase of any error.
+const aunthController = require('./../controllers/authController')
 
 
 const router = express.Router();
@@ -19,5 +19,8 @@ router.route('/forgotpassword')
 
 router.route('/ResetPassword/:token')
        .patch(aunthController.Resetpassword)
+
+router.route('/updatePassword')
+      .patch(aunthController.protect, aunthController.updatePassword)
 
 module.exports = router;
