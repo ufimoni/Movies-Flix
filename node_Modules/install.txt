@@ -1,3 +1,0 @@
-type npm init
-to create a package.json file
-npm install express mongoose to dowlaod all folders.
